@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgb(175, 185, 196);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+}
+header .logo a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+header .logo a:hover
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+header h1
+{
+    position: absolute;
+    left: 100px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    color: whitesmoke;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover
+{
+    color: red;
+}
+
+.img1
+{
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    border-style: solid;
+    width: 500px;
+    border-color: #fff066;
+}
+
+.img2
+{
+    position: absolute;
+    top: 600px;
+    right: 50px;
+    border-style: solid;
+    width: 500px;
+    border-color: #fff066;
+}
+
+.img3
+{
+    position: absolute;
+    top: 1000px;
+    right: 50px;
+    border-style: solid;
+    width: 500px;
+    border-color: #fff066;
+}
+
+.boquis1 {
+    justify-content: space-around;
+    position: absolute;
+    top: 120px;
+}
+
+.box1 {
+    background: linear-gradient(90deg, #f57666, #ffaf4d, #f3e98b);
+    padding: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 750px;
+    height: 1270px;
+    transition: background 1s;
+}
+.box1 h1 {
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+    position: relative;
+    top: 1400px;
+    bottom: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    body
+    {
+        background-color: linear-gradient (90deg, #f57666, #ffaf4d, #f3e98b);
+    }
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+    .box1 {
+        text-align: center;
+        padding-top: 130px;
+        width: 390px;
+        height: 1400px;
+    }
+
+    .box1 h1
+    {
+    font-size: 12px;
+    }
+
+    .img1, .img2, .img3 {
+        display: none;
+    }
+    footer
+    {
+        position: relative;
+        top: 1500px;
+    }
+}
