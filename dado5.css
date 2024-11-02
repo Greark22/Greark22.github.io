@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgb(175, 185, 196);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+}
+header .logo a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+header .logo a:hover
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+header h1
+{
+    position: absolute;
+    left: 100px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    color: whitesmoke;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover
+{
+    color: red;
+}
+
+.img2
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+
+.img1
+{
+    position: absolute;
+    top: 800px;
+    left: 50px;
+    border-style: solid;
+    width: 500px;
+    border-color: #fff066;
+}
+
+.img10
+{
+    padding-top: 10px;
+}
+
+.img11
+{
+    width: 90%;
+    position: relative;
+    top: 40px;
+}
+.boquis {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    top: 550px;
+    padding-right: 0px;
+}
+
+.box {
+    background: linear-gradient(90deg, #f57666, #ffaf4d, #fff066);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
+    width: 450px;
+    height: 410px;
+    text-align: center;
+}
+
+.boquis1 {
+    justify-content: space-around;
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    transition: background 1s ease; 
+}
+
+.box h2
+{
+    color: whitesmoke;
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.box1 {
+    background: linear-gradient(90deg, #f57666, #ffaf4d, #f3e98b);
+    padding: 50px;
+    width: 100%;
+    height: 400px;
+    transition: background 1s;
+}
+.box1 h1 {
+    font-size: 19px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.boquis2 {
+    justify-content: space-around;
+    position: relative;
+    top: 530px;
+}
+
+.box2 {
+    background: linear-gradient(90deg, #f57666, #ffaf4d, #f3e98b);
+    padding: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+}
+.box2 h1 {
+    font-size: 19px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.boquis3 {
+    justify-content: space-around;
+    position: absolute;
+    top: 800px;
+}
+
+.box3 {
+    background: linear-gradient(90deg, #f57666, #ffaf4d, #f3e98b);
+    padding: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    height: 200px;
+    transition: background 1s;
+    border-radius: 10px;
+}
+.box3 h1 {
+    font-size: 19px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+    position: relative;
+    top: 600px;
+    bottom: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        position: relative;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .img1, .img2 {
+        width: 0px;
+        max-width: 100%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+    .boquis {
+        flex-direction: column;
+        align-items: center;
+        top: 230px;
+        margin-bottom: 50px;
+    }
+
+    .box {
+        width: 95%;
+        height: 400px;
+        margin-bottom: 10px;
+    }
+    .boquis1
+    {
+        position: relative;
+        top: 220px;
+    }
+    .box1 {
+        width: 100%;
+        height: 650px;
+        padding: 20px;
+        text-align: center;
+    }
+    .box1 h1
+    {
+        font-size: 16px;
+    }
+    .box2
+    {
+        width: 90%;
+        height: 200px;
+        position: relative;
+        padding: 20px;
+        text-align: center;
+        bottom: 320px;
+        left: 17px;
+    }
+    footer {
+        position: relative;
+        top: 200px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .img11
+    {
+        width: 90%;
+        position: relative;
+        top: 00px;
+    }
+}
