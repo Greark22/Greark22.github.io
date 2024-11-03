@@ -123,7 +123,22 @@ nav ul li a:hover
     width: 1700px;
     height: 300px;
     transition: background 1s;
+    animation: gradientAnimation 2s ease infinite;
+    background-size: 300% 300%;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .box1 h1 {
     font-size: 100px;
     color: #ffffff;
