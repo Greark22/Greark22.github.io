@@ -115,7 +115,7 @@ nav ul li a:hover
 }
 
 .box1 {
-    background: linear-gradient(90deg, #f57666, #ffaf4d, #fff066);
+    background: linear-gradient(45deg, #d35140, #ffaf4d, #d3c43f);
     padding: 50px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
